@@ -1,0 +1,56 @@
+.main-banner-home {
+  background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 490px;
+  width: 90vw;
+  margin:auto;
+  margin-top: 3rem;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-color: #685f58;
+    opacity: 0.35;
+    z-index: 1;
+  }
+  .container {
+    z-index: 10;
+  }
+  .button {
+    margin-top: 27px;
+  }
+  h2.h1 {
+    color: var(--primary);
+    letter-spacing: 0;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    @media screen and (min-width: 768px) {
+      font-size: 5.5rem;
+      line-height: 6.5rem;
+    }
+  }
+}
+
+.span-2-col{
+  grid-column-start: 1;
+    grid-column-end: 3;
+}
+#app {
+  .header {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .button {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+}
